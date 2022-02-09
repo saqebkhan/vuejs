@@ -29,6 +29,10 @@
     <button @click="sub">-</button>
     <hr>
     <!---------------/Counter Computed------------------>
+    <ul>
+      <li v-for="item in emp" :key="item">{{emp.name}}</li>
+    </ul>
+
   </div>
 </template>
 
@@ -40,7 +44,11 @@ export default {
       AddTodo: "",
       find:'',
       todos: ["khao", "piyo"],
-      items: ['aan', 'baan', 'shaan']
+      items: ['aan', 'baan', 'shaan'],
+      emp : {
+        name : 'sameer',
+        roll : 12
+      } 
     };
   },
   methods: {
@@ -65,6 +73,9 @@ export default {
         return item.includes(this.find)
         })
     },
+    
+     
+    
     
   }
 };
