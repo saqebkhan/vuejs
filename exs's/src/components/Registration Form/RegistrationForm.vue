@@ -72,21 +72,21 @@
               type="radio"
               name="gender"
               id="dot-1"
-              value="male"
+              value="Male"
               v-model="gender"
             />
             <input
               type="radio"
               name="gender"
               id="dot-2"
-              value="female"
+              value="Female"
               v-model="gender"
             />
             <input
               type="radio"
               name="gender"
               id="dot-3"
-              value="preferNotToSay"
+              value="Prefer Not To Say"
               v-model="gender"
             />
             <span class="gender-title">Gender</span>
@@ -109,7 +109,6 @@
             <input
               class="form-check-input"
               type="checkbox"
-              role="switch"
               id="flexSwitchCheckChecked"
               v-model="tnc"
             />
@@ -117,7 +116,7 @@
               >Agree TNC</label
             >
           </div>
-          <div class="button">
+          <div class="button" v-show="tnc==true">
             <button class="bt" @click="check">Submit</button>
           </div>
         </form>
@@ -133,7 +132,7 @@ export default {
       name: "",
       username: "",
       email: "",
-      phone: NaN,
+      phone: "",
       password: "",
       cPassword: "",
       designation: "",
@@ -151,9 +150,9 @@ export default {
         phone: this.phone,
         password: this.password,
         confirmedPassword: this.cPassword,
-        Designation: this.designation,
+        designation: this.designation,
         gender: this.gender,
-        TNC: this.tnc,
+        terms: this.tnc,
         file: this.image,
       });
     },
@@ -229,12 +228,9 @@ select {
   height: 45px;
   width: 100%;
   outline: none;
-  font-size: 16px;
-  border-radius: 5px;
   padding-left: 15px;
   border: 1px solid #ccc;
   border-bottom-width: 2px;
-  transition: all 0.3s ease;
 }
 .user-details .input-box input:focus,
 .user-details .input-box input:valid {
@@ -262,7 +258,6 @@ form .category label .dot {
   margin-right: 10px;
   background: #d9d9d9;
   border: 5px solid transparent;
-  transition: all 0.3s ease;
 }
 #dot-1:checked ~ .category label .one,
 #dot-2:checked ~ .category label .two,
@@ -284,10 +279,7 @@ form .button .bt {
   border: none;
   color: #fff;
   font-size: 18px;
-  font-weight: 500;
-  letter-spacing: 1px;
-  cursor: pointer;
-  transition: all 0.3s ease;
+  /* cursor: pointer; */
   background: linear-gradient(135deg, #71b7e6, #9b59b6);
 }
 .selected-image {
