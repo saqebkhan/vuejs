@@ -1,11 +1,6 @@
 <template>
   <div>
-    <input
-      type="text"
-      placeholder="Add To Do"
-      v-model="input"
-      @keyup.enter="add"
-    />
+    <input type="text" placeholder="Add To Do" v-model="input" @keyup.enter="add"/>
     <ol>
       <li v-for="(todo, index) in todos" :key="todo" :class="lis">
         <button @click="del(index)">x</button>{{ todo }} <input type="checkbox" v-model="check">
@@ -20,12 +15,11 @@ export default {
     return {
       input: "",
       todos: [],
-      // check: false
     };
   },
   methods: {
     add() {
-      if(this.input.trim() !='' ){this.todos.push(this.input)}
+      this.todos.push(this.input)
       this.input = "";
     },
     del(index) {

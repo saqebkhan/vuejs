@@ -26,7 +26,7 @@ td {
   padding: 15px;
 }
 tr:nth-child(even) {
-  background-color: rgb(178, 255, 164);
+  background-color: rgb(203, 255, 194);
   color: rgb(0, 0, 0);
 }
 th {
@@ -34,7 +34,7 @@ th {
   color: white;
 }
 tr:nth-child(odd):hover {
-  background-color: rgba(253, 255, 126, 0.699);
+  background-color: rgba(251, 255, 0, 0.699);
 }
 tr:nth-child(even):hover {
   background-color: rgb(92, 255, 71);
