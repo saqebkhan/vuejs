@@ -1,20 +1,18 @@
 <template>
-<div>
- <RegistrationForm />
+  <div>
+    <Parent />
+    <!-- <RegistrationForm /> -->
   </div>
 </template>
 
 <script>
-import RegistrationForm from './components/Registration Form/RegistrationForm.vue'
-
+import Parent from "./components/PropComp/Parent.vue";
+// import RegistrationForm from './components/Registration Form/RegistrationForm.vue'
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    RegistrationForm
-  }
-}
+    Parent,
+    // RegistrationForm
+  },
+};
 </script>
-
-<style>
-
-</style>
