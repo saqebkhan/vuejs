@@ -1,18 +1,15 @@
 <template>
   <div>
-    <!-- <Parent /> -->
-    <!-- <RegistrationForm /> -->
+    <APICall />
   </div>
 </template>
 
 <script>
-// import Parent from "./components/PropComp/Parent.vue";
-// import RegistrationForm from './components/Registration Form/RegistrationForm.vue'
+import APICall from './components/API Call/APICall.vue'
 export default {
   name: "App",
   components: {
-    // Parent,
-    // RegistrationForm
+    APICall
   },
 };
 </script>
