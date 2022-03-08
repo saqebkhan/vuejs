@@ -1,15 +1,15 @@
 <template>
   <div>
-    <APICall />
+    <Vue />
   </div>
 </template>
 
 <script>
-import APICall from './components/API Call/APICall.vue'
+import Vue from './components/Vuetify/Vue.vue'
 export default {
   name: "App",
   components: {
-    APICall
+    Vue
   },
 };
 </script>
