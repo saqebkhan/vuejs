@@ -5,7 +5,6 @@
     </h3>
     <h3 v-if="checked.length == items.length" class="pa-4 h">All Done</h3> -->
     <!-- <h2>checked {{checked}}</h2> -->
-    <h2>items {{ items }}</h2>
     <v-list>
       <v-subheader>List Todo</v-subheader>
       <div class="head">
