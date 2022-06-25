@@ -4,7 +4,7 @@
         <h1>{{meta}}</h1>
         <h1>{{mounted}}</h1>
         <h1>{{update}}</h1>
-        <button @click.prevent="data=='ch'">ch</button>
+        <button @click.prevent="data='ch'">ch</button>
     </div>
 </template>
 

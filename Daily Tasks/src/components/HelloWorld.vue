@@ -73,10 +73,6 @@ export default {
         return item.includes(this.find)
         })
     },
-    
-     
-    
-    
   }
 };
 </script>
