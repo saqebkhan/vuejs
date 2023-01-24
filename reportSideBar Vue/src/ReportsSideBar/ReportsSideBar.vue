@@ -9,6 +9,7 @@
           <option>QA Test Report</option>
           <option>Report 2</option>
           <option>Report 3</option>
+          <options>Report 4</options>
         </select>
         <label class="lab" for=""><b>From</b></label>
         <input class="date report input" type="date" />
